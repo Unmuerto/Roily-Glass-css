@@ -1,0 +1,164 @@
+html {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto';
+    background-image: url('https://psv4.userapi.com/c856320/u37259857/docs/d2/c81b2e5e8bc5/san-francisco-san-francisco-2725.jpg');
+    background-size: 130% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 60vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20vw;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color:rgba(245, 245, 245, 0.274);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+.content {
+    margin-left: 30px;
+    margin-right: 30px;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.content p {
+    margin: 40px;
+}
+
+.content p::first-letter {
+    font-size: 30px;
+    color: #313131;
+    padding-bottom: 3px;
+}
+
+.sitenav {
+    padding: 1px;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+}
+
+.sitenav ul {
+    padding: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sitenav li {
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.sitenav a {
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+    letter-spacing: 2px;
+
+}
+
+.sitenav a:hover {
+    border-bottom: 2px solid aliceblue;
+}
+
+.login-button {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 15px;
+    color: white;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid aliceblue;
+}
+
+.content h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.4);
+}
+
+div.card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    justify-content: flex-start;
+    width: 12vw;
+    border: 1px solid grey;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(199, 211, 221, 0.808);
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+
+div.card .card-label {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hor-line {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: grey;
+    opacity: 0.4;
+}
+
+.card-image {
+    filter: sepia();
+}
+
+div.card:hover .card-image {
+    filter: unset;
+}
+
+div.card:hover {
+    background-color: ivory;
+    box-shadow: 0 0 13px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    font-size: 18px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 0;
+    bottom: 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+
+}
