@@ -1,35 +1,53 @@
 html {
-    min-height: 100vh;
-    margin: 0;
     font-family: 'Titillium Web', sans-serif;
-    background-image: url('https://psv4.userapi.com/c856320/u37259857/docs/d2/c81b2e5e8bc5/san-francisco-san-francisco-2725.jpg');
-    background-size: 130% ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
 }
 
 .glass {
-    position: absolute;
-    min-height: 100vh;
-    margin: 0;
-    background-image: url('https://psv4.userapi.com/c856320/u37259857/docs/d2/c81b2e5e8bc5/san-francisco-san-francisco-2725.jpg');
-    background-size: 130% ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: blur(4px);
-    z-index: 1;
+    height: 100vh;
+    width: 60vw;
+    margin-left: 20vw;
+	position: fixed;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.glass:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    filter: blur(10px);
 }
 
 body {
     min-height: 100vh;
+    margin: 0;
+    top: 0px;
+    background-image: url('https://psv4.userapi.com/c856320/u37259857/docs/d2/c81b2e5e8bc5/san-francisco-san-francisco-2725.jpg');
+    background-size: 130% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.inside-glass {
+    min-height: 100vh;
     width: 60vw;
     margin-top: 0;
+    position: absolute;
+    top: 0px;
     margin-bottom: 0;
     margin-left: 20vw;
     border-left: 1px solid white;
     border-right: 1px solid white;
-    background-color:rgba(245, 245, 245, 0.274);
+    background-color:rgba(245, 245, 245, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
     }
 
 
@@ -185,7 +203,7 @@ footer {
     margin-bottom: 0;
     bottom: 0px;
     align-items: center;
-    display: flex;
+    display: none;
     align-content: flex-end;
     justify-content: space-around;
 }
