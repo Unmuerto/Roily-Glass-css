@@ -82,18 +82,24 @@ a:hover a:focus {
     filter: none;
 }
 
+.navbar .nav a {
+    letter-spacing: 2px;
+}
+
 .login-button {
-    border: 1px solid black;
+    border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.01);
     border-radius: 16px;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
 }
 
 .login-button:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border: 1px solid white;
     box-shadow: none;
 }
