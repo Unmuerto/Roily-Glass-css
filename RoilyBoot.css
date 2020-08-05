@@ -9,6 +9,46 @@ body {
     background-attachment: fixed;
 }
 
+.inside-glass {
+    background-image: url('https://psv4.userapi.com/c856320/u37259857/docs/d2/c81b2e5e8bc5/san-francisco-san-francisco-2725.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.glass {
+    max-width: inherit;
+    width: 100%;
+    height: 100%;
+	position: fixed;
+	z-index: 0;
+	background: inherit;
+    overflow: hidden;
+    margin-left: -15px;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.glass:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    filter: blur(6px);
+}
+
+.glasscolor {
+    width: inherit;
+    height: inherit;
+    background: repeating-linear-gradient(150deg, #ffffff, #888);;
+    opacity: 0.3;
+}
+
 a:hover a:focus {
     text-decoration: none;
     outline: 0;
@@ -31,7 +71,7 @@ a:hover a:focus {
 }
 
 .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
